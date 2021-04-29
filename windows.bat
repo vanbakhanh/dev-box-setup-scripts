@@ -27,7 +27,6 @@ choco install zoom
 echo;
 
 echo * Installing Common Dev Tools...
-choco install git --params "/GitAndUnixToolsOnPath /NoAutoCrlf /WindowsTerminal"
 choco install vscode
 choco install python
 choco install 7zip
@@ -39,6 +38,8 @@ choco install putty
 choco install notepadplusplus
 choco install firacode
 choco install microsoft-windows-terminal
+choco install fiddler
+choco install git --params "/GitAndUnixToolsOnPath /NoAutoCrlf /WindowsTerminal"
 echo;
 
 echo * Installing WSL2...
