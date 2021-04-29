@@ -38,7 +38,6 @@ choco install mysql.workbench
 choco install putty
 choco install notepadplusplus
 choco install firacode
-choco install unikey
 echo;
 
 echo * Installing WSL2...
