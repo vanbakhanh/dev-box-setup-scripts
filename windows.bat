@@ -38,6 +38,7 @@ choco install dbeaver
 choco install putty
 choco install notepadplusplus
 choco install firacode
+choco install microsoft-windows-terminal
 echo;
 
 echo * Installing WSL2...
