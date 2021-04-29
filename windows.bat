@@ -40,6 +40,7 @@ choco install firacode
 choco install microsoft-windows-terminal
 choco install fiddler
 choco install git --params "/GitAndUnixToolsOnPath /NoAutoCrlf /WindowsTerminal"
+choco install git-fork
 echo;
 
 echo * Installing WSL2...
