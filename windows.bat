@@ -34,7 +34,7 @@ choco install 7zip
 choco install nodejs
 choco install docker-desktop
 choco install postman
-choco install mysql.workbench
+choco install dbeaver
 choco install putty
 choco install notepadplusplus
 choco install firacode
