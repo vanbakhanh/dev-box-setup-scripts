@@ -49,6 +49,7 @@ choco install wsl-ubuntu-2004 --params "/InstallRoot:true"
 echo;
 
 echo * Installing Entertaiment Stuff...
+choco install utorrent
 choco install splash
 
 echo * Finished
