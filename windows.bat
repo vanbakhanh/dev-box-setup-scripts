@@ -46,5 +46,8 @@ choco install wsl2
 choco install wsl-ubuntu-2004 --params "/InstallRoot:true"
 echo;
 
+echo * Installing Entertaiment Stuff...
+choco install splash
+
 echo * Finished
 pause
