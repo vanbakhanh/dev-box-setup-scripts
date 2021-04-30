@@ -44,12 +44,12 @@ choco install git-fork
 echo;
 
 echo * Installing WSL2...
-choco install wsl2
+choco install wsl2 --params "/Version:2 /Retry:true"
 choco install wsl-ubuntu-2004 --params "/InstallRoot:true"
 echo;
 
 echo * Installing Entertaiment Stuff...
-choco install utorrent
+choco install utorrent --ignore-checksums
 choco install splash
 
 echo * Finished
