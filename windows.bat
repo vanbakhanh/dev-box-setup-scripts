@@ -47,6 +47,7 @@ echo * Installing Personal Tools...
 choco install utorrent --ignore-checksums
 choco install splash
 choco install warp
+echo;
 
 echo * Installing WSL2...
 choco install wsl2 --params "/Version:2 /Retry:true"
