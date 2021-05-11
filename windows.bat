@@ -33,14 +33,13 @@ choco install 7zip
 choco install nodejs
 choco install docker-desktop
 choco install postman
-choco install dbeaver
+choco install mysql.workbench
 choco install putty
 choco install notepadplusplus
 choco install firacode
 choco install microsoft-windows-terminal
 choco install fiddler
 choco install git --params "/GitAndUnixToolsOnPath /NoAutoCrlf /WindowsTerminal"
-choco install git-fork
 echo;
 
 echo * Installing Personal Tools...
