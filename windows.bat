@@ -38,7 +38,6 @@ choco install putty
 choco install notepadplusplus
 choco install firacode
 choco install microsoft-windows-terminal
-choco install fiddler
 choco install git --params "/GitAndUnixToolsOnPath /NoAutoCrlf /WindowsTerminal"
 echo;
 
@@ -46,11 +45,12 @@ echo * Installing Personal Tools...
 choco install utorrent --ignore-checksums
 choco install splash
 choco install warp
+choco install choco-cleaner
 echo;
 
 echo * Installing WSL2...
-choco install wsl2 --params "/Version:2 /Retry:true"
-choco install wsl-ubuntu-2004 --params "/InstallRoot:true"
+choco install wsl2
+choco install wsl-ubuntu-2004
 echo;
 
 echo * Finished
