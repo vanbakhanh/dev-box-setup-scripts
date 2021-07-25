@@ -39,6 +39,7 @@ choco install notepadplusplus
 choco install firacode
 choco install microsoft-windows-terminal
 choco install git --params "/GitAndUnixToolsOnPath /NoAutoCrlf /WindowsTerminal"
+choco install mongodb-compass
 echo;
 
 echo * Installing Personal Tools...
