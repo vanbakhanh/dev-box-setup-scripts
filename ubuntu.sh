@@ -84,16 +84,19 @@ sudo apt install -y git
 echo "# Install NVM"
 sudo apt update
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
-source ~/.bashrc
-nvm install node
 
 echo "# Install VS Code"
 sudo apt update
 sudo snap install --classic code
 
-echo "# Install Chromium browser"
+echo "# Install Chromium"
 sudo apt update
 sudo apt install -y chromium-browser
+
+echo "# Install Chrome"
+sudo apt update
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
 
 echo "# Install Postman"
 sudo apt update
@@ -106,6 +109,18 @@ sudo snap install slack --classic
 echo "# Install Skype"
 sudo apt update
 sudo snap install skype --classic
+
+echo "# Install Fira Code Font"
+sudo add-apt-repository universe
+sudo apt update
+sudo apt install fonts-firacode
+
+echo "# Install Ibus-bamboo"
+sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo
+sudo apt update
+sudo apt install ibus ibus-bamboo --install-recommends
+ibus restart
+env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 
 echo "# Completed"
 echo "# Rebooting"
