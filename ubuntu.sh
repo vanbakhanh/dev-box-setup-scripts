@@ -50,9 +50,13 @@ sudo apt install -y curl \
 # sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 # sudo sh -c "echo 'precedence ::ffff:0:0/96 100' >> /etc/gai.conf"
 
-echo "# Install mysql"
+echo "# Install MySql"
 sudo apt update
 sudo apt install -y mysql-server
+
+echo "# Install DBeaver"
+sudo apt update
+sudo snap install dbeaver-ce
 
 # echo "# Install ABD & Fastboot"
 # sudo apt update
