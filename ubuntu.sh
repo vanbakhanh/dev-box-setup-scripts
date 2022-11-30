@@ -87,7 +87,7 @@ curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 source ~/.bashrc
 nvm install node
 
-echo "# Install Visual sutido code"
+echo "# Install VS Code"
 sudo apt update
 sudo snap install --classic code
 
