@@ -12,6 +12,13 @@ sudo apt install -y curl \
     openssh-server \
     gnupg2 \
     wget
+    
+cd /tmp
+
+echo "# Install Chrome"
+sudo apt update
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install -y ./google-chrome-stable_current_amd64.deb
 
 # echo "# Install apache2"
 # sudo apt update
@@ -53,10 +60,11 @@ sudo apt install -y curl \
 echo "# Install MySql"
 sudo apt update
 sudo apt install -y mysql-server
+sudo systemctl disable mysql
 
-echo "# Install DBeaver"
+echo "# Install MySql Workbench"
 sudo apt update
-sudo snap install dbeaver-ce
+sudo apt install -y mysql-workbench
 
 # echo "# Install ABD & Fastboot"
 # sudo apt update
@@ -68,7 +76,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update
 apt-cache policy docker-ce
-sudo apt install docker-ce
+sudo apt install -y docker-ce
 sudo usermod -aG docker ${USER}
 
 echo "# Install Docker Compose"
@@ -89,15 +97,6 @@ echo "# Install VS Code"
 sudo apt update
 sudo snap install --classic code
 
-echo "# Install Chromium"
-sudo apt update
-sudo apt install -y chromium-browser
-
-echo "# Install Chrome"
-sudo apt update
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install ./google-chrome-stable_current_amd64.deb
-
 echo "# Install Postman"
 sudo apt update
 sudo snap install postman
@@ -113,12 +112,12 @@ sudo snap install skype --classic
 echo "# Install Fira Code Font"
 sudo add-apt-repository universe
 sudo apt update
-sudo apt install fonts-firacode
+sudo apt install -y fonts-firacode
 
 echo "# Install Ibus-bamboo"
 sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo
 sudo apt update
-sudo apt install ibus ibus-bamboo --install-recommends
+sudo apt install -y ibus ibus-bamboo --install-recommends
 ibus restart
 env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 
