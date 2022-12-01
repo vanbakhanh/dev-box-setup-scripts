@@ -65,6 +65,7 @@ sudo systemctl disable mysql
 echo "# Install MySql Workbench"
 sudo apt update
 sudo snap install -y mysql-workbench-community
+sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
 
 # echo "# Install ABD & Fastboot"
 # sudo apt update
