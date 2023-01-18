@@ -5,13 +5,18 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install -y curl \
     software-properties-common \
-    vim \
     ca-certificates \
     apt-transport-https \
     libpng-dev \
     openssh-server \
     gnupg2 \
-    wget
+    wget \
+    default-mysql-client \
+    netcat \
+    vim \
+    telnet \
+    bash \
+    git-lfs
     
 cd /tmp
 
